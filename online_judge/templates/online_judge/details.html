@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if problem %} {{problem.question_name}} {% endif %}</title>
+  </head>
+  <body>
+      {% if problem %}
+        <h1>{{problem.question_name}}</h1><br/>
+        <p>{{problem.question_description}}</p><br/>
+        <form action="{% url 'online_judge:new_submission' %}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <input type="file" name="codefile"><br/><br/>
+          <input type="submit" value="Upload">
+        </form>
+      {% endif %}
+  </body>
+</html>
