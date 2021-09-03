@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Question(models.Model):
     question_name = models.CharField(max_length=100)
     question_description = models.CharField(max_length=100000)
-    question_input_file = models.CharField(max_length=200)
+    question_input_file = models.CharField(max_length=500)
     question_output_file = models.CharField(max_length=200)
 
     def __str__(self):

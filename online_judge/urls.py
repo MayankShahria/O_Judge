@@ -1,10 +1,12 @@
-from django.conf.urls import url
+from django.urls import path
+
 from . import views
 
 app_name = 'online_judge'
 
 urlpatterns = [
-    url(r'^$',views.index,name='index'),
-    url(r'^problems/$',views.problems,name='problems'),
-    url(r'^problems/(?P<problem_name>[a-zA-Z]+)/$', views.problem_details, name='problem_details'),
+    path('', views.index, name='index'),
+    path('problems/', views.problems, name='problems'),
+    path('problems/<str:problem_name>/', views.problem_details, name='problem_details'),
+    path('submitted/', views.new_submission, name='new_submission'),
 ]
