@@ -23,14 +23,11 @@ li a {
 
 .oj-header .oj-header-limiter h1{
 	float: left;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	font: normal 28px;
 	line-height: 40px;
 	margin: 0;
 }
 
-.oj-header .oj-header-limiter h1 span {
-	color: #5383d3;
-}
 
 /* The navigation links */
 
@@ -102,7 +99,6 @@ li a {
 
 .oj-header .oj-header-limiter ul li:last-child a {
 	font-weight: bold;
-	background-color: #3a3c3e;
 	padding: 10px 15px;
 	border-radius: 3px;
 }
@@ -166,10 +162,9 @@ body {
 	width:50%;
 	opacity: 0.95;
 	z-index: 1;
-	min-height: 60%;
+	min-height: 50%;
 	margin:0 auto;
-	margin-top: 3%;
-	background-color: #98d4f3;
+	margin-top: 5%;
 	color: white;
 	font-family: 'Sniglet', cursive;
 	text-align:left;
@@ -180,8 +175,8 @@ body {
 	-moz-border-radius:0 0 5px 5px;
 	-webkit-border-radius: 20px 20px 20px 20px;
 	box-shadow:0 0 5px #ccc;
-	-moz-box-shadow:0 0 5px #ccc;
-	-webkit-box-shadow:0 0 5px #ccc;
+
+
 }
 
 label, input, textarea{

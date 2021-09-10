@@ -6,6 +6,8 @@
 {% if problem %}
 	<h1>{{problem.question_name}}</h1><br/>
 	<p>{{problem.question_description}}</p><br/>
+	<p>{{problem.question_input_file}}</p><br/>
+	<p>{{problem.question_output_file}}</p><br/>
 	<form action="{% url 'online_judge:new_submission' %}" method="post" enctype="multipart/form-data">
 	{% csrf_token %}
 	<input type="file" name="codefile"><br/><br/>

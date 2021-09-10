@@ -70,9 +70,9 @@
 <body>
 <header class="oj-header">
 	<div class="oj-header-limiter">
-		<h1><a href="{% url 'online_judge:index' %}">Online<span>Judge</span></a></h1>
+		<h1><a href="{% url 'Home' %}">Online<span>Judge</span></a></h1>
 		<nav>
-			<a href="{% url 'online_judge:index' %}" class="selected">Home</a>
+			<a href="{% url 'Home' %}" class="selected">Home</a>
 			<a href="{% url 'online_judge:problems' %}">Problems</a>
 			<a href="#">Editorials</a>
 		</nav>
@@ -100,8 +100,8 @@
 	        </form>
 	    </div>
 	</div>
-	<a href="{% url 'online_judge:problems'%}"><button>Solve Problems</button></a>
-	<a href="#"><button>View Profile</button></a>
+	<!---<a href="{% url 'online_judge:problems'%}"><button>Solve Problems</button></a>
+	<a href="#"><button>View Profile</button></a>--->
 </div>
 </body>
 </html>
