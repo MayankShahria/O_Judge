@@ -30,7 +30,7 @@ def problem_details(request, problem_name):
 
 def new_submission(request):
 	if request.method == 'POST' and request.FILES['codefile']:
-		submission_number = Submission.objects.last().id + 1
+		submission_number = Submission.objects.last()
 		run_file(request.FILES['codefile'])
 		template = loader.get_template('online_judge/submitted.html')
 		context = {
